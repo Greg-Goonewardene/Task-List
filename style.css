@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #06fcae;
+  background-image: url("./images/art.jpg");
+  background-attachment: fixed;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+ul {
+  pointer-events: none;
+}
+
+.filter {
+  position: absolute;
+  top: 100px;
+  z-index: 3;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease;
+  padding: 0px 0px 0px 6px;
+}
+
+.opaque {
+  position: absolute;
+  top: 5%;
+  left: -25%;
+  background: #333737;
+  opacity: 0.3;
+  height: 200%;
+  width: 500px;
+  border-radius: 15px;
+  z-index: -2;
+}
+
+.holder {
+  background:
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+
+.field {
+  height: 100px;
+  margin-top: 40px;
+  position: absolute;
+  top: 0%;
+  left: 31%;
+  align-items: center;
+  z-index: 3;
+}
+
+.itemHolder
+{
+  position: relative;
+  height: 100vh;
+}
+
+.items {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  left: -12%;
+  top: 40%;
+  align-items: center;
+  z-index: 3;
+}
+
+.items li {
+  border-top: 2px solid #e3ebe0;
+  border-left: 2px solid #e3ebe0;
+  border-right: 2px solid #e3ebe0;
+  background: #FFFFFF;
+  list-style: none;
+  height: 40px;
+  padding: 10px 10px 10px 50px;
+  z-index: 3;
+}
+
+.addList {
+    position: absolute;
+    background: white;
+    height: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    transition: all 0.5s ease;
+    padding: 0px 0px 0px 6px;
+  }
+
+.fa-plus-square {
+    position: absolute;
+    right: -255%;
+    top: 61%;
+  }
+
+.fa-trash-alt {
+  position: absolute;
+  align-items: right;
+  right: 7%;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: red;
+}
+
+.fa-check  {
+  position: absolute;
+  align-items: right;
+  left: 3%;
+  pointer-events: auto;
+  z-index: 3;
+}
+
+.message {
+    color: chartreuse;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    top: 200px;
+    left: 437px;
+  }
+
+h2 {
+    position: relative;
+    color: #ffffff;
+    align-items: center;
+    left: 140%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .opaque {
+        position: absolute;
+        top: 5%;
+        left: -15%;
+        background: #333737;
+        opacity: 0.3;
+        height: 200%;
+        width: 450px;
+        border-radius: 15px;
+        z-index: -2;
+      }
+
+      .field {
+        height: 100px;
+        margin-top: 40px;
+        position: absolute;
+        top: 0%;
+        left: 15%;
+        align-items: center;
+        z-index: 3;
+          }
+
+      .items {
+        height: 400px;
+        width: 400px;
+        position: relative;
+        left: -8%;
+        top: 40%;
+        align-items: center;
+        z-index: 3;
+      }
+
+      .message {
+        color: chartreuse;
+        font-size: 14px;
+        font-weight: bold;
+        position: fixed;
+        top: 190px;
+        left: 125px;
+      }
+    }
+
+@media screen and (max-width: 600px) {
+  .opaque {
+    position: absolute;
+    top: 5%;
+    left: -12%;
+    background: #333737;
+    opacity: 0.3;
+    height: 200%;
+    width: 450px;
+    border-radius: 15px;
+    z-index: -2;
+  }
+
+  .field {
+    height: 100px;
+    margin-top: 40px;
+    position: absolute;
+    top: 0%;
+    left: 6%;
+    align-items: center;
+    z-index: 3;
+      }
+
+  .items {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: -6%;
+    top: 40%;
+    align-items: center;
+    z-index: 3;
+  }
+
+  .message {
+    color: chartreuse;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    top: 190px;
+    left: 75px;
+  }
+}
